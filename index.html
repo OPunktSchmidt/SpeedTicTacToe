@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta charset="utf-8" />
+    <script src="Scripts/default.js"></script>
+    <script src="Scripts/jquery-3.1.1.js"></script>
+    <link href="CSS/default.css" rel="stylesheet" />
+    <title>Speed TicTacToe</title>
+</head>
+<body>
+
+<div id="pageDiv">
+    <header>
+        <h1>Speed -TicTacToe</h1>
+    </header>
+    <p>
+            Welcome to my little afterwork project "Speed TicTacToe". I've done it to learn more about HTML5, CSS3 and JavaScript.
+            It is a classic TicTacToe game but you only have one second for your turn. The AI is currently still quite stupid but
+            I am working on a new version. 
+            <br /><br />
+
+           <a href="https://github.com/OPunktSchmidt" target="_blank">GitHub</a>
+    </p>    
+    <div id="playfieldDiv">
+        <table id="playfieldTable">
+            <tbody>
+                <tr>
+                    <td data-playfieldCell="1" data-playerid="" data-currentplayerid="" data-gamestate="1"></td>
+                    <td data-playfieldCell="2" data-playerid="" data-currentplayerid="" data-gamestate="1"></td>
+                    <td data-playfieldCell="3" data-playerid="" data-currentplayerid="" data-gamestate="1"></td>
+                </tr>
+                <tr>
+                    <td data-playfieldCell="4" data-playerid="" data-currentplayerid="" data-gamestate="1"></td>
+                    <td data-playfieldCell="5" data-playerid="" data-currentplayerid="" data-gamestate="1"></td>
+                    <td data-playfieldCell="6" data-playerid="" data-currentplayerid="" data-gamestate="1"></td>
+                </tr>
+                <tr>
+                    <td data-playfieldCell="7" data-playerid="" data-currentplayerid="" data-gamestate="1"></td>
+                    <td data-playfieldCell="8" data-playerid="" data-currentplayerid="" data-gamestate="1"></td>
+                    <td data-playfieldCell="9" data-playerid="" data-currentplayerid="" data-gamestate="1"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div id="playfieldControlsDiv">
+            <button id="gameControlButton" class="gameControlButton" data-gamestate="1">START</button>
+        </div>
+
+        <div id="gameStateDiv"></div>
+    </div>
+    <footer>
+    </footer>
+</div>
+
+    <script>
+        
+        $("document").ready(init());
+
+    </script>
+</body>
+</html>

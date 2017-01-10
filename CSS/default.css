@@ -1,0 +1,119 @@
+﻿@charset 'utf-8';
+
+body{
+    font-family:Verdana,Arial,sans-serif;
+}
+#pageDiv {
+    width:800px;
+    height:830px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:40px;
+    border:2px solid;
+    border-color:lightgray;
+    border-radius:20px;
+    padding:1%;
+    box-sizing:border-box;
+}
+
+#pageDiv > header {
+    text-align:center;
+}
+
+#pageDiv > header h1 {
+    margin:0;
+}
+
+#playfieldTable{
+    
+    width:500px;
+    height:500px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:30px;
+}
+
+#playfieldTable td{
+    border:1px solid;
+}
+
+#playfieldTable td[data-gamestate="2"][data-currentplayerid="1"]:hover{
+    background-color:lightblue;
+}
+
+#playfieldTable td[data-playerid="1"]{
+    background-color:lightgreen;
+}
+
+#playfieldTable td[data-playerid="2"]{
+    background-color:lightcoral;
+}
+
+#playfieldControlsDiv{
+    width:500px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:10px;
+}
+
+.gameControlButton{
+    width:100%;
+    height:30px;
+    font-weight:bold;
+}
+
+.gameControlButton[data-gamestate="1"]
+{
+    background-color:lightgreen;
+}
+
+.gameControlButton[data-gamestate="1"]:hover
+{
+    background-color:mediumseagreen;
+}
+
+.gameControlButton[data-gamestate="2"]
+{
+    background-color:red;
+}
+
+.gameControlButton[data-gamestate="2"]:hover
+{
+    background-color:darkred;
+}
+
+.gameStateGreenDiv{
+    width:500px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:30px;
+    text-align:center;
+    font-weight:bold;
+    font-size:1.4em;
+    color: darkseagreen;
+}
+
+.gameStateRedDiv{
+    width:500px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:30px;
+    text-align:center;
+    font-weight:bold;
+    font-size:1.4em;
+    color: lightcoral;
+}
+
+a[href*="github"] {
+    color:green;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+a[href*="github"]:hover {
+    color:green;
+    font-weight:bold;
+    text-decoration:underline;
+}
+
+
